@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="team_a">WALES</string>
+    <string name="team_b">ENGLAND</string>
+    <string name="starting_score">0</string>
+    <string name="penalty_drop_goal">Penalty/Drop Goal +3</string>
+    <string name="conversion">Conversion +2</string>
+    <string name="try_plus_5">Try +5</string>
+    <string name="reset">Reset</string>
+    <string name="welsh_rugby_union_flag_description">Welsh Rugby Union flag with three feathers</string>
+    <string name="english_rugby_union_flag_desription">English Rugby Union flag with Red Rose in centre</string>
+</resources>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5C9B1"
+    android:orientation="vertical"
+    tools:context="com.example.android.scorekeeper.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"
+            android:background="#E05858"
+            android:contentDescription="@string/welsh_rugby_union_flag_description"
+            android:src="@drawable/welsh_feathers" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:contentDescription="@string/english_rugby_union_flag_desription"
+            android:src="@drawable/england_rose" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scores_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="@string/team_a"
+                android:textColor="#10438e"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/wales_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="@string/starting_score"
+                android:textColor="#10438e"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#5F968E"
+                android:onClick="plus3PointsWales"
+                android:text="@string/penalty_drop_goal"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#5F968E"
+                android:onClick="plus2PointsWales"
+                android:text="@string/conversion"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#5F968E"
+                android:onClick="tryWales"
+                android:text="@string/try_plus_5"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#10438e" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:text="@string/team_b"
+                android:textColor="#10438e"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/england_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="@string/starting_score"
+                android:textColor="#10438e"
+                android:textSize="56sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#5F968E"
+                android:onClick="plus3PointsEngland"
+                android:text="@string/penalty_drop_goal"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#5F968E"
+                android:onClick="plus2PointsEngland"
+                android:text="@string/conversion"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#5F968E"
+                android:onClick="tryEngland"
+                android:text="@string/try_plus_5"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="#5F968E"
+        android:gravity="center"
+        android:onClick="resetScore"
+        android:text="@string/reset"
+        android:textColor="@android:color/white" />
+</LinearLayout>
