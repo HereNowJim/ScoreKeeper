@@ -4,7 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D5C9B1"
+    android:background="@drawable/winger"
     android:orientation="vertical"
     tools:context="com.example.android.scorekeeper.MainActivity">
 
