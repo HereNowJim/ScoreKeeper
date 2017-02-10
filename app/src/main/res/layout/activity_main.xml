@@ -4,6 +4,7 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:alpha="0.8"
     android:background="@drawable/winger"
     android:orientation="vertical"
     tools:context="com.example.android.scorekeeper.MainActivity">
@@ -23,7 +24,7 @@
             android:layout_marginRight="12dp"
             android:layout_marginStart="24dp"
             android:layout_weight="1"
-            android:background="#E05858"
+            android:background="#CCE05858"
             android:contentDescription="@string/welsh_rugby_union_flag_description"
             android:src="@drawable/welsh_feathers" />
 
@@ -36,7 +37,7 @@
             android:layout_marginRight="24dp"
             android:layout_marginStart="12dp"
             android:layout_weight="1"
-            android:background="@android:color/white"
+            android:background="#CCffffff"
             android:contentDescription="@string/english_rugby_union_flag_desription"
             android:src="@drawable/england_rose" />
 
@@ -65,7 +66,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="@string/team_a"
-                android:textColor="#10438e"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <TextView
@@ -76,7 +77,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
                 android:text="@string/starting_score"
-                android:textColor="#10438e"
+                android:textColor="@android:color/white"
                 android:textSize="56sp" />
 
             <Button
@@ -84,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#5F968E"
+                android:background="#CC5F968E"
                 android:onClick="plus3PointsWales"
                 android:text="@string/penalty_drop_goal"
                 android:textColor="@android:color/white" />
@@ -94,7 +95,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#5F968E"
+                android:background="#CC5F968E"
                 android:onClick="plus2PointsWales"
                 android:text="@string/conversion"
                 android:textColor="@android:color/white" />
@@ -104,7 +105,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#5F968E"
+                android:background="#CC5F968E"
                 android:onClick="tryWales"
                 android:text="@string/try_plus_5"
                 android:textColor="@android:color/white" />
@@ -131,7 +132,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:gravity="center_horizontal"
                 android:text="@string/team_b"
-                android:textColor="#10438e"
+                android:textColor="@android:color/white"
                 android:textSize="18sp" />
 
             <TextView
@@ -142,7 +143,7 @@
                 android:fontFamily="sans-serif-light"
                 android:gravity="center_horizontal"
                 android:text="@string/starting_score"
-                android:textColor="#10438e"
+                android:textColor="@android:color/white"
                 android:textSize="56sp" />
 
             <Button
@@ -150,7 +151,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#5F968E"
+                android:background="#CC5F968E"
                 android:onClick="plus3PointsEngland"
                 android:text="@string/penalty_drop_goal"
                 android:textColor="@android:color/white" />
@@ -160,7 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#5F968E"
+                android:background="#CC5F968E"
                 android:onClick="plus2PointsEngland"
                 android:text="@string/conversion"
                 android:textColor="@android:color/white" />
@@ -170,7 +171,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#5F968E"
+                android:background="#CC5F968E"
                 android:onClick="tryEngland"
                 android:text="@string/try_plus_5"
                 android:textColor="@android:color/white" />
@@ -182,7 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"
-        android:background="#5F968E"
+        android:background="#CC5F968E"
         android:gravity="center"
         android:onClick="resetScore"
         android:text="@string/reset"
